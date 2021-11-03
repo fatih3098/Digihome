@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Etiketleri</title>
+</head>
+<body>
+   <p>
+       <h1 style="color: crimson;">FORM ETİKETLERİ</h1>
+   </p> 
+   <P>
+       Form etiketleri form etiketi içinde kullanılırlar. 
+   </P>
+   <p>
+       <b><em>"input"</em></b>  etiketi ile bilgi girilmesi gereken kutucuklar oluşturulur. <br>
+       <ul> Aşağıdaki input seçenekleri mevcuttur. <br> <br>
+           <li>text</li>
+           <li>password</li>
+           <li>file</li>
+           <li>checkbox</li> 
+       </ul>
+   </p>
+   <ul type="square"> <h3 style="color: darkblue; em"><u>label etiketi ve input etiketi</u> </h5> <br>
+        <li> <b><em>"label"</em> </b>  etiketi ile kutucukların yanına ilgili bilgi girilmesi sağlanır.</li><br>
+        <li> input etiketini label etiketinin içine alarak yazıya tıklandığında da kutucuğa fokuslanması sağlanabilir.</li> <br>
+        <li> bunun bir diğer yöntemi de önce label etiketi oluşturularak for kısmına yazılan veri, 
+        <br/> daha sonra aşağı input etketi içinde oluşturulan "id" etiketiile aynı olmasıdır.</li><br>
+        <li>özetle label içindeki "for" ve input içindeki  "id" aynı olmalıdır.</li>
+        <li>radio çoklu seçeneklerden sadece birinin seçmesi sağlanabilir. <br>
+            Bunu sağlamak için input etiketleri içindeki "name" seçeneklerde aynı olmalıdır. <br/>
+            Hangi değerin seçili olduğumum belli olması için kendi kutusunun "value" değeri olarak girilmelidir.</li> <br/>
+        <li>gene bu input etiketlerini label etiketleri içine alarak metne <br/> tıklandığında kutucuklara fokuslanması sağlanabilir.</li>
+        <li>"Checkbox" etiketi ile birden çok kutucuğu işaretlemek mümkündür.</li> <br>
+        <li><b><em>checked</em></b>  input içine yazılarak ön seçili olması sağlanabilir.</li> <br>
+        <li>required ile boşlukların mecbur seçilmesi sağlanabilir. </li> <br>
+        <li>date/week/month  ile tarih seçilebilir.</li>
+        <li>input type tel ile telefon girilmesi sağlanabilir.</li> <br>
+        <li>input type url ile https ile internet adresi girilmesi zorunlu tutulur. </li> <br>
+        <li>placeholder ile kutucuk içinde silik veri örnek bilgi gereklilik yazılabilir.</li> <br>
+        <li>dosya seçerken bazı dosyaların seçilmesini sağlamak bazılarını engelleyebilmek için<br/>
+        <b><em> input type="file"</em></b> içinde <b><em> accept="image/*"</em></b>(burada dosya şekli resim uzantısı farketmez demek)
+            <br/> şeklinde yazılır.</li>
+        <li>autocoplete onn ve off ile kutucuğun otomatik dolması veya kapanması sağlanır.</li> <br>
+       
+    <ul><h4 style="color: crimson;"><b>Datalist</b> </h4>
+        <li><b>input list </b> ile <b>datalist id </b> <br/>
+            aynı yapılarak kutucuğa tıklandığında birden çok seçeneğin görünmesi sağlanır.  </li> <br>
+        <li>Option value kapanan bir etiketdeğildir.</li>  <br>
+        <li>Yazılım açısından inputta "name" yazmazsa göder seçeneğine tıklasak bile değerler gitmez</li> <br> 
+    </ul> 
+  <hr>
+        <ul>
+            <li> input type="submit"  etiketinde formaction seçeneği ile inputlardaki bilgilerin istenilen adrese/yere gönderilmesi sağlanır</li>.
+            <li><b><em> get ve post</em></b></li> : form etiketini açtığımızda (formaction) formmethod'da karşımıza çıkar. <br/>
+            get seçeneği ile gönderilen veriler gözükürken, post seçildiğinde adres satırınad inputta girilen veriler  gözükmez.
+        </ul> <br><br>
+   
+
+        <ul><h4 style="color: crimson;"><b>Select</b> </h4>
+            <li>select etiketi ile kutucuğa tıklandığında çoklu veriden birinin seçilmsesini amaçlanır. <br/>
+                select içine multiple yazılarak  seçeneklerin çoklu olması da mümkündür.</li> <br>
+            <li>select içindeki verilri "optgroup" ile gruplayabilirz.</li><br>
+        
+        
+        
+        </ul>
+   <hr>
+   <hr>
+
+    <h2 style="color: crimson;">Kullanıcı Bilgileri</h2>
+
+   <form action="get" id="form1">
+        <fieldset>
+            <legend>Giriş Yapınız</legend>
+                    <label for="Benutzername">Kullanıcı Adı</label>
+                    <input type="text" name="" id="Benutzername" placeholder="Lütfen kullanıcı adınızı giriniz"> <br><br>
+                    <label for="email">Email Adresi</label>
+                    <input type="email" name="" id="email" placeholder="Lütfen email adresini giriniz"> <br><br>
+                    <button type="submit">Giriş</button>
+        </fieldset> <br> <br>
+
+
+
+        <label>
+            <input type="checkbox" required> Kuralları ve koşulları kabul ediyorum.
+        </label> <br> <br>
+        <input type="submit" formaction="/tablodeneme.html" value="gönder"> <br><br>
+        <label>
+            <input type="radio" name="Cinsiyet" value="Erkek"> Erkek
+        </label>
+        <label>  
+            <input type="radio" name="Cinsiyet" value="Kadın"> Kadın
+        </label> <br> <br>
+        
+       <label for="Geheimzahl">Şifre</label>
+       <input type="password" name="" id="Geheimzahl" > <br><br>
+       <button type="submit">Gönder 2</button>
+        <br><br><br>
+        <label for="color">renk seçiniz</label>
+        <input type="color" name="Color" id="color"> <br> <br>
+
+        <label for="time">saat</label>
+        <input type="time" name="time" id="time"> <br><br> 
+
+        <label for="file">Dosya Seçiniz</label>
+        <input type="file" name="" id="file"> <br><br>
+        <label for="diller">Diller</label><br>
+        <input list="diller" name="diller">
+        <datalist id="diller">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Java">
+        </datalist>
+   </form> <br><br>
+
+
+   <hr>
+   <br><br>
+   <label for="diller">Programlama Dilleri</label><br>
+   <select name="diller"  id="diller">
+        <optgroup label="Front-end Dilleri">
+            <option value="HTML">HTML</option>
+            <option value="css">CSS</option>
+        </optgroup>
+        <optgroup label=" Back-end Dilleri">
+            <option selected value="JS">JS</option>
+            <option value="Java">HTML</option>
+            <option value="Pyton">Pyton</option>
+            <option value="C#">c#</option>
+        </optgroup>
+     </select> <br><br><br>
+
+     <fieldset> <legend>abccd</legend>
+     <label for="yorumlar">YORUMLAR</label> <br> <br>
+     <textarea name="" id="yorumlar" cols="40" rows="30" placeholder="Yorumlarınızı buraya yazabilirsiniz"></textarea>
+    <br><br>
+    
+    <button type="submit">Yorumunuzu gönderin</button>
+    </fieldset>
+    <button type="reset">reset</button>
+ 
+
+
+
+
+
+
+</body>
+</html>

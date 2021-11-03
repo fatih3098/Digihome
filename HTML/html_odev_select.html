@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ÖDEV SELECT FORM</title>
+</head>
+<body>
+    <h3>Application for FullStack Developement Course</h3>
+    <b> Note:</b> Form is to be completed at least days prior to date
+
+    <form action="mailto:kam@gmail.com" method="post">
+        <fieldset>
+            <legend>Personal Deatils</legend> 
+
+            <label for="isim">Name</label>
+            <input type="text" placeholder="Enter name here" id="name"><br><br>
+
+            <label for="E-posta">Email:</label> 
+            <input type="email" placeholder="Enter email here" name="Email" id="E-posta"> <br><br>
+
+            <label for="telefon">Phone Number:</label>
+            <input type="tel" placeholder="(555)-555-5555" name="telefon" id="telefon"><br><br>
+
+            <label for="Gender">Cinsiyet</label> <br><br>
+            <input type="radio" name="Cinsiyet" id="">Male <br>
+            <input type="radio" name="Cinsiyet"  id="">Female <br><br>
+            Date of Birth:
+            <input type="date" name="" id="">
+
+        </fieldset> <br>
+
+        <fieldset>
+            Education Level Completed:
+            <select name="" id="">
+                <option value="University" selected>University</option>
+                <option value="College">College</option>
+                <option value="High School">High School</option>
+                <option value="None">None</option>
+            </select>
+
+        </fieldset> <br>
+
+        <fieldset>
+            Please check if you know any of below <br> <br>
+            
+            <input checked type="checkbox" name="HTML" id="HTML"> HTML <br>
+            <input checked type="checkbox" name="CSS" id="CSS"> CSS <br>
+            <input type="checkbox" name="BootStrap" id="BootStrap"> BootStrap <br>
+            <input checked type="checkbox" name="JavaStrap" id="JavaStrap"> JavaStrap <br>
+            <input type="checkbox" name="JavaScript" id="JavaScript"> JavaScript <br>
+            <input type="checkbox" name="React" id="React"> React <br>
+            <input type="checkbox" name="MongoDB" id="MongoDB"> MongoDB <br> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            In 50 words or more explain why you want to attend course.  <br><br>
+            <textarea placeholder="Enter Text Here" name="yorum" id="yorum" cols="40" rows="10s"></textarea>
+        </fieldset>
+        
+        Please add any file (as .pdf format) that is relatede to your application: <br>
+        <input type="file" accept=".pdf" name="" id=""> <br> <br>
+
+        
+        <button type="submit"> Submit your application</button>
+    
+    </form>
+
+
+
+</body> 
+</html>

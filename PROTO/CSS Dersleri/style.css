@@ -1,0 +1,107 @@
+/*
+p {
+    color: rgb(0, 207, 35);
+}
+li {
+    color: blueviolet;
+}
+span {
+    color: darkslategrey;
+}
+div {
+    color:blue ;
+}
+
+#Title {
+    color: rgba(236, 0, 0, 0.486);
+}
+*/
+
+.css-renk-uygulanacak {
+    background-color: cornflowerblue;
+}
+
+.kalin-renk-atanacak {
+    font-weight: bold;
+}
+
+.kalin-renk-atanacak.yazi {
+   
+    font-weight: bold ;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+
+p.fatih.burak#mert {
+    background-color: cyan;
+}
+
+p.fatih.burak#mert {
+    font-size: 30px;
+}
+
+#mert {
+    font:larger;
+    font-style: italic;
+}
+
+p.fatih.burak {
+    font-style: normal;
+}
+
+p.masa .sandalye {
+    color: darkblue;
+}
+
+p > em {
+    color: darkred;
+}
+p>span>em {
+    color: darkgreen;
+}
+
+h3 + p {
+    color: darkgreen;
+}
+
+div + p {
+    color: darkmagenta;
+}
+
+div + p span {
+    color: darkturquoise;
+}
+.sınıf + p {
+    color: darkred;
+}
+p[class] {
+  background-color: greenyellow;
+    }
+abbr [title] {
+    color: greenyellow;
+}
+img[alt]{
+    background-color:greenyellow ;
+}
+
+div[class="box"] {
+    color:rgb(95, 4, 88) ; background-color: lawngreen;
+}
+div[class|="box"] {
+    color:rgb(95, 4, 88) ; background-color: lawngreen;
+}
+
+div[class^="elma"] {
+    background-color: indigo;
+}
+
+div[class$="armut"] {
+    background-color: lightseagreen;
+}
+
+div[class*="title"] {
+    background-color:mediumorchid
+}
+div[class*="top" i] {font-style: oblique; color: mediumturquoise;}
