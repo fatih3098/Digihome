@@ -1,0 +1,49 @@
+html, body {height: 100%;}
+/*div.my {
+    width: 33%;
+    height: 33%;
+    border-style: double;
+    border-width: thick;
+    border-color: forestgreen;
+    
+    border-top-left-radius: 50px 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 40px 20px;
+    
+    
+    border-radius: 5%;
+    border-right-color: oldlace;
+    border-inline-start-color: palevioletred; 
+}*/
+
+/*
+div.my1 {
+    width: 33%;
+    height: 33%;
+    border-style: solid;
+    margin-top: 20%;
+    border-color: rgb(206, 0, 0);
+    border-radius: 50%;
+    }
+*/
+body {font-family: cursive;
+font-size: 16px;}
+input {color:rgb(207, 208, 45)}
+.firstdiv {color:rgb(0, 0, 255 )}
+.altdiv {color:#fa6575 ;
+font-size: xx x-large;}
+
+span.bir {font-family: monospace;
+    font-weight: bolder;
+    font-style: italic;
+    
+  
+    text-shadow: seagreen;
+    color:blueviolet ;
+}
+
+span.iki {font-size: smaller;}
+span.sifir {font-size: x-large;}
+span.iki {font-size: larger ;}
+h6 {font-size: 100%;}
