@@ -1,0 +1,70 @@
+/* table, th, td {
+    border:  1px solid red;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: bottom;
+    height: 100%;
+}
+td {
+    height: 30px;
+    padding: 10px;
+}
+td:hover {background-color: cadetblue;}
+th:hover {background-color: cornflowerblue;}
+tr:nth-child(even)  {background-color: crimson;}
+tr:nth-child(odd)  {background-color: rgb(20, 220, 63);}
+thead {color: darkblue;}
+
+p {border:1px solid darkblue;
+}
+
+span {
+    width: 190px;
+    background-color: darkkhaki;
+    display: inline-block;
+}
+
+h3.ff {display: inline-block;
+    border: 1px solid red;} */
+
+#bigbox {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: rgba(255, 242, 170, 0.438);
+  display: inline-block;
+  position: absolute;
+}
+#bigbox {
+  margin-left: -8px;
+}
+
+#box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  right: 200px;
+  top: 200px;
+}
+
+#box2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#box3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
