@@ -1,0 +1,55 @@
+/* p {
+  
+  
+    font-size: larger;
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    letter-spacing:24px ;
+    text-decoration-line: underline overline;
+    text-decoration-style:dotted ;
+    text-decoration-color: violet;
+}
+div {
+    text-align: center;
+    padding-top: 50px;
+    margin: 49px 50px 50px 75px;
+    width: 150px;
+    height: 150px;
+    background-color: wheat;
+}
+/* div:nth-of-type(2) {text-decoration: none ;} 
+
+p { font-size: small;
+    font-family: monospace;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: ;
+    
+} 
+
+h3 {
+    font-family:monospace;
+    text-align: center;
+    line-height: 35px;
+    font-size: 40px;  
+    font-weight:900;
+     text-shadow: yatay dikay bulanıklık renk-- şeklinde dört değer alır ; birden
+    fazla yazmak çin virgül koyup devam edilebilir.
+    text-shadow: -15px -15px 0  pink, 0 0 10px blue,  25px 25px 20px yellow;
+}
+
+h4 {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: darkblue;
+    text-shadow: 2px 2px 0 rgba(0, 0,0, .1);
+} s
+*/s
+html {height: 100%;}
+
+body { 
+    background-image:linear-gradient( red 15px, orange 10px, blue 5px, yellow 20px);
+  
+    }

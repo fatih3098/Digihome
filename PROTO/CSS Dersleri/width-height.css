@@ -27,6 +27,7 @@ div.my1 {
     border-radius: 50%;
     }
 */
+/*
 body {font-family: cursive;
 font-size: 16px;}
 input {color:rgb(207, 208, 45)}
@@ -47,3 +48,21 @@ span.iki {font-size: smaller;}
 span.sifir {font-size: x-large;}
 span.iki {font-size: larger ;}
 h6 {font-size: 100%;}
+p.oblique {
+    font-style: oblique;
+}
+em {font-style: normal;}
+
+ .variant {font-variant: small-caps;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;}
+*/
+
+/*
+p#hepsibirarada { line-height: 150%;
+    font:small-caps bold italic 15px/1.6 Arial, sans-serif;
+    letter-spacing: -1px;}
+*/
+
+div {
+    text-align:justify ;
+}
