@@ -1,12 +1,16 @@
-/*
-div {background-color: cornflowerblue;}
-div {padding: 50px; width: 100px; height: 100px;}
-div{margin: 75px;}
+.grid-item {
+    background-color: #97cba9;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    padding: 20px;
+    color: antiquewhite
+}
 
-div {background-color: darkgoldenrod; margin: 8px; width: 70px; height: 170px; display:inline-block; writing-mode: vertical-lr ;}
-span { 
-    margin-left: 50px; background-color:darkkhaki ;
-}*/
- span {
-     background-color: blueviolet; font-size: xx-large; border-radius: ;
- }
+.grid-item:nth-child(odd) {
+    background-color: #668ba4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:  25% 50% 25%;
+}
