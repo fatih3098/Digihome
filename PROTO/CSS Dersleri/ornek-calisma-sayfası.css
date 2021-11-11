@@ -1,4 +1,4 @@
-.grid-item {
+/* .grid-item {
     background-color: #97cba9;
     font-size: 1.5rem;
     border: 2px solid white;
@@ -13,4 +13,32 @@
 .grid-container {
     display: grid;
     grid-template-columns:  25% 50% 25%;
+} */
+header, nav, article, .ads, footer  {
+    background-color: chocolate;
+    padding: 20px
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 9fr 2fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-gap: 5px;
+    height: 90vh;
+
+    grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+
+}
+
+header {  
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+footer {
+     grid-area: footer;
+    }
