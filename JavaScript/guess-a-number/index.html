@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="guess">
+
+        <h1>
+            Guess the Number (1-100)
+        </h1>
+    
+        <div class="number">
+            <label for="input1">
+                <input value="" class="numbery1" type="number" name="numberx" id="input1">
+                <button class="numbery1" name="numberx">CHECK</button>
+        </label>
+        </div>
+    
+        <h3>
+            Write the number
+        </h3>
+
+        <h5>
+            Number of attempts:
+        </h5>
+
+    </div>
+
+    <script>
+
+        let guessNumber = document.querySelector("#input").value
+        if(guessNumber<55){
+            alert ("up")
+        }else if(guessNumber>55){
+            alert("down")
+        }else{
+            alert("bravo")
+        }
+
+    </script>
+</body>
+</html>

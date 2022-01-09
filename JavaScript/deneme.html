@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENEME</title>
+</head>
+<body>
+
+    
+
+
+<header  style="font-size: 30px; display: flex; color: wheat; border-radius: 98px ; border-style:doble; border: 2px double yellow; background-color: tomato; padding-top: auto; padding-bottom: auto; align-items: center ; justify-content:center; height: 60px;">JavaScript Deneme Sayfası</header>
+
+<script>
+
+    /*var sayi1 = 10; 
+    var sayi2 = 20;
+    var sayi3 = ( sayi1 + sayi2 );
+    console.log(sayi3);
+
+    var marka;
+    console.log(marka);
+
+    marka = "toyota"
+    console.log(marka);
+
+    var model = "rav4";
+    console.log(model)
+    console.log(marka + " " + model)
+
+
+
+function myFirstFunction() {
+    console.log("Hello World! ")
+}
+
+myFirstFunction()
+
+function meyvesuyuyapıcı (meyve1, meyve2 ){
+    const suyu = 'Bu bir ${meyve1} ve ${meyve2} suyu'
+    console.log("function: ", suyu)
+    return suyu
+}
+// console.log(meyvesuyuyapıcı("elma", "armut"))
+const meyvesuyum = meyvesuyuyapıcı("elma","armut")
+console.log("meyvesuyum")
+
+
+
+console.log("merhaba");
+console.log("se")
+prompt('adını yaz');
+prompt("zfafsoyadını yaz");
+let name = ("afra");
+console.log(name);
+let mail= 'aavkQnakfva.vşv';
+console.log('mail');
+
+let fatih = "ali";
+fatih = "murat";
+
+let a = 3 ;
+let b = 7 ;
+
+/*a = b;
+b = 3 ;
+console.log(a,b)
+b= a
+let c= 7;
+a = c;
+console.log(a,b)
+
+let c = a;
+
+a= b;
+b=c;
+console.log(a,b)
+
+console.log(typeof  "888")
+console.log(typeof 3.14);
+console.log(typeof true);
+let email = null
+
+var fname = "afra";
+fname = "kemal"
+let fname2 = "ebuzer"
+console.log(fname);
+const ker = "tez"
+console.log(ker);
+ker = "s"
+
+
+let a = 1990 ;
+let b = 2021;
+let s = b - a;
+console.log("yaş:" , s)
+
+let a = 2
+let b = 8 
+let c = 6
+let toplama = a + b ;
+let işlem = a*(c+b+a)
+console.log(toplama);
+console.log(işlem);
+let exponent = 3**5;
+console.log(exponent);
+//kalan bulma hesaplama için bölünecek sayı ve bölen sayı arsına yüzde işareti konulur.//
+let mod = 10%3;
+console.log(mod);
+
+/*                      INCREMENT  VE DECREMENT OPRATÖRLER                           */
+
+        //   ++   demek bir artır demek 
+        //  --    demek bir eksilt demek
+
+    /* eksieksi(--) sol tarafta olursa bu işlenden işbaren azalt demek AZALT SONRA ATA, eksieksi(--) sağ taraftaolursa bu işlmden sonra bir eksilt demek  ATA SONRA AZALT
+let ab = 3;
+let xy = --ab;
+console.log (ab, xy)
+
+let abc = 3;
+let xyz = abc-- // bu satırda abc =3 ata sonra azalt
+console.log(xyz, abc);
+
+let dec = 5 ;
+let assg = ++dec ;
+console.log(dec, assg)
+
+let dec2= 5;
+let assg2 = dec2++;
+console.log(assg2,dec2 )
+
+
+let fname = "fatih"
+let sname = "ince"
+console.log(fname + " " + sname);
+
+
+//Assignment Operators
+let x = 2
+x = x+5
+console.log("x burada", x,"'dir")
+
+let  y= 10
+y/= 2;8
+
+console.log("y = " + y)
+
+// x = x + y
+
+x += y
+console.log("x", x)
+
+y*= 4
+console.log("y = " + y)
+
+x+=y
+console.log(x)
+
+//Comparison Operators
+
+let ageAhmet =50
+let agefatih= 40
+console.log(ageAhmet>agefatih)
+
+console.log(ageAhmet == agefatih)
+console.log(agefatih !=50)  /* burada önce ünlem koyup eşittir işareti koyarak bu doğru değildir önermesi kontrol ettiriliyor. 
+
+console.log(ageAhmet==="50")
+console.log(agefatih !=="50")  
+console.log(ageAhmet ==="50") //strich comparison//
+console.log(ageAhmet=="50") // loose comparison//
+*/
+// Template Literal  //
+//pratik yazım : dolar işareti hektik işareti ve süslü parantez ile => hektik işareti alt gr ve virgül e baılması gerekir //
+
+/* 
+
+let firstname = "Jeff"
+let surname = "Bezos"
+let work = "AMAZON"
+
+let sentence = "HE is" +" "+ firstname + " " + surname + " and he is founder of" + " " + work + "."
+console.log(sentence)
+
+let bettersentence = `He is ${firstname} ${surname} and he is founder of ${work}.`
+console.log(bettersentence)
+
+ // on new line //  // yeni - alt satıra alma //  //  \n\ işareti vardı.  //
+
+ console.log("I want to write this line\n\ on new line " )
+ iki türlü de mümkün çift tırnak ve hektik işareti içinde cümle yazma
+ console.log(`I want to write this line\n\ on new line ` )
+
+ //       ---------- CONDITIONALS    ---------        //
+/*
+ const currentage = 15;
+
+ if(currentage>=18) {
+     console.log("You can drive legally.")
+
+ }else{console.log("you cannot drive")}
+
+ const doğduğutarih = 1988
+ 
+ const şimdikitarih = 2021
+ const yaş = şimdikitarih - doğduğutarih
+
+ if(yaş<18){console.log("kusura bakma araç kullanamazsın")}else{console.log("araç tabi ki kullanabilirsin.")}
+ 
+let generation;
+const birthyear = 2001
+function abcd(){
+ if(birthyear >=2000){
+     generation = "Z"
+    } else if( birthyear < 2000) {
+        generation= "Y"
+    }
+}
+console.log("gen", generation)
+
+
+  const ve let kendi alanında etkilidir. her yerde etkili olaması için root yani globalde tanımlanması gerekir. ama var heryerde etkilidir, karşımıza çıkabilir.
+ */
+
+ 
+//-----------------------------------------------------  //
+
+/* const number= prompt("enter a number here");
+
+let elime = text.split
+console.log(elime)   
+
+ let not = 85;
+ let mark;
+    if(not>90){
+        mark= "AA"
+    }else if(not>80){
+        mark="BB"
+    }else if(not>70){
+        mark="CC"
+    }
+    console.log(mark)
+
+
+    //  ---- CONVERSION AND TYPE COERCION  ----   //
+        // type conversion -> manually convert type //
+ console.log(typeof "18");
+ console.log(typeof 18);
+ console.log(typeof (18));
+ console.log(typeof String(18));
+ console.log(typeof Number("18"));
+ console.log(Number("Fatih"));
+ console.log(Number("38"));
+ console.log(38)
+        
+        //  type coercion -> Js convert value behind the scenes //
+ 
+ let num = "5";
+ let add = num + 6;
+ console.log(add)  //burada toplama işlemei için num sayısal algılanmadı. sadece toplama işleminde burada string algılanır. diğer işlemlerde sayı yani number olarak algılanır//
+
+ let minus = num - 1;
+ console.log("minus ", minus);
+
+ let divide = 40/num;
+ console.log("divide ", divide);
+
+ let mult = 5*num;
+ console.log("mult ", mult)
+
+ let add2 = Number(num) + 8 ;
+ console.log("add2 " , add2)
+
+
+
+let hs ="1"
+hs += 1
+hs -= 1
+console.log(hs)
+
+
+let cash = 0;
+if(cash) {
+    console.log("finf a job")
+}
+
+if(cash==0) console.log("no jobs found")
+
+//-------------------------SWITCH---------------------------------//
+
+
+let day = "saturday"
+
+switch(day){
+    case "monday": 
+        console.log("there is no class, you can practise")
+        break
+    case "tuesday": 
+        console.log("CSS")
+        break
+    case "wednsday":
+        console.log("JS")
+        break
+    case "thursday":
+        console.log("no class")
+        break
+    case "friday":
+        console.log("CSS")
+        break
+    case "saturday":
+        console.log("no claassssss")
+        break
+    case "sunday":
+        console.log("holiday")
+        break
+}
+
+//---------------  TERNARY OPERATOR--------------------//
+
+
+
+const gradex = 50;
+gradex >= 60 ? console.log("passed") : console.log("failed")
+/*
+const gradeY = 60
+if(gradeY < 45 ) {
+    console.log("nein")
+}else {
+    console.log("ja")
+}    
+
+const weather = "hot";
+
+const season = weather ==="hot" ? "summer" : "winter"
+console.log("season: ", season)
+
+//-------------NULLISH COALESCING----------//
+
+const val = null;
+
+const value = val ?? "default value ata";
+console.log("values :", value)
+
+
+//--------------------EXAMPLE-----------------//
+console.log(0 || undefined || "ahmet")
+
+
+const dolphinsavr1 = (96 + 108 + 89) / 3
+console.log(dolphinsavr1)
+
+const koalaavr1 = (88 + 91 + 110) / 3
+console.log("koala" , koalaavr1)
+
+if(koalaavr1>dolphinsavr1){
+    console.log("koala ist gewonnen!!!")
+}else {
+    console.log("dolphins sins gewonnen!!!")
+}
+ 
+const dolphinsavr2 = (97 + 112 + 101) / 3
+console.log(dolphinsavr2)
+const koalasavr2 = (109 + 95 + 106) / 3
+console.log(koalasavr2)
+
+if(dolphinsavr2 > koalasavr2 && dolphinsavr2>=100){
+    console.log("dolphins sind nochmal gewonnen")
+}else if(koalasavr2>dolphinsavr2 && koalasavr2>=100){
+    console.log("koalas sind nochmal gewonnen!!!")
+}else if(koalasavr2==dolphinsavr2){
+    console.log("niemand ist gewonnen")
+}
+
+//----------------------Example 2 --------------------------//
+/*
+const days = prompt("enter the day: ");
+const hoursaturday = prompt("enter the time");
+if(hour<=21 && hour>=10){
+    switch (days){
+        case("monday"):
+        console.log("open")
+        break
+        case("tuesday"):
+        console.log("open")
+        break
+        case("wednesday"):
+        console.log("open")
+        break
+        case("thursday"):
+        console.log("open")
+        break
+        case("friday"):
+        console.log("open")
+        break
+        case("saturday"):
+        console.log("open")
+        break
+        case("sunday"):
+        console.log("open")
+        break
+    }
+}
+
+
+
+const days = prompt("günü yazınız")
+const saat = prompt("saati yazınız") 
+if (days !="Monday" && days !="Tuesday" && days !="Wednesday" && days !="thursday" &&  days !="friday" && days != "saturday") { alert("!!!Please enter valid day") }
+if(saat<=22 && saat>=10){
+    switch(days){
+        case("monday"):
+            console.log("open!")
+            break
+        case("tuesday"):
+            console.log("open!")
+         break
+        case("wednesday"):
+            console.log("open")
+            break
+        case("thursday"):
+        console.log("open!")
+        break
+        case("friday"):
+        console.log("open")
+        break
+        case("saturday"):
+        console.log("open")
+    }
+}else{
+    console.log("closed")
+}
+*/
+/*
+//---------------\\//       FUNCTIONS         //\\--------------------//
+
+function myFirstFunctions(){
+    console.log("Hello World !  ")
+}
+myFirstFunctions()
+myFirstFunctions()
+myFirstFunctions()
+myFirstFunctions()
+myFirstFunctions()
+
+function juiceExtractor(fruit1, fruit2, fruit3){
+    const juice= `This is ${fruit1} and ${fruit2} and ${fruit3} juice.`
+    return juice
+}
+
+console.log(juiceExtractor("ananas", "ayva" ,"armut"))
+const myJuice = juiceExtractor("muz", "kayısı","keçiboynuzu ")
+console.log(myJuice)
+
+//functiom Declaration //
+
+function calcAge (birthyear){
+const age = 2021 - birthyear
+return age} 
+console.log(calcAge(1997)) 
+/*  
+
+-----kısayol olarak  böyle de yazılabilir---------
+function calcAge (birthyear){return (2021-birthyear)}
+console.log(calcAge(1997))
+
+*/
+
+
+/*
+// function Expression Code
+
+const addition = function (a , b){
+   
+    return a + b
+}
+
+const total = addition(2000, 35)
+console.log(total)
+
+//----------------   ARROW function    ---------------//
+
+const calcAge2 = birthYear => 2021-birthYear
+console.log(calcAge2(2000))
+
+const canDrive = birthYear=>{
+    const age = 2021 - birthYear
+    const allowed = 18 - age
+    return `You can drive ${allowed} year later.`
+}
+
+const result = canDrive(2006)
+console.log(result)
+
+// 7 24 25 üçgeni için hipotenüs hesaplama  //
+
+function hipotenus (a, b){
+    const firstValue = exponentValue(a)
+    const secondValue = exponentValue(b)
+    const result =(firstValue + secondValue) ** (0.5)
+    return result
+}
+
+function exponentValue(value){
+    return value ** 2
+}
+const hipoResult = hipotenus (7,24)
+console.log(hipoResult)
+
+//------------example dolphin and koala ---------------//
+
+function average (a,b,c){
+    return(a+b+c) /3
+}
+const avgDolpgin = average(96, 108, 89) 
+console.log(avgDolpgin)
+const avgKoala = average (88, 91, 110)
+console.log(avgKoala)
+
+function findWinner (team1, team2){
+    if(team1>team2){
+        return `The winner Dolphin`
+    }else{
+        return `The winnner is Koala`
+    }
+}
+console.log(findWinner(avgDolpgin, avgKoala ))
+
+//---------------example  leapYear  -----------------//
+const year = prompt("enter a year: ")
+
+function leapYear(year) {
+    if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+    return `${year} is a leap year`
+    }else{
+        return `${year} is not a leap year`
+    }
+    }
+leapYear()
+console.log(leapYear(year))
+*/
+//---------------example 371  --------------------------------//
+/*
+const number = prompt("enter a three digit number")
+
+//console.log(typeof number)//
+
+function isArmstrong(number){
+    const len = number.lengt
+    const newNumber = number.split("")
+    console.log(newNumber)
+    console.log(len)
+
+    const sum = newNumber [0] ** len + newNumber[1] ** len + newNumber[2] ** len
+
+    return sum == number ? "is Ar371mstrong" : "not Armstrong"
+}
+
+// -------- ---------------- ------ -- STRING-------       -----//
+ //            -------------------- ---------  METHODS --------- //
+
+let text = "Her şey güzel olacak !"
+let len = text.length
+console.log("length" + len)
+
+//-----EXTRACT METHODS------
+//--slide(start , end)
+
+let firstPart = text.slice(8, 13)
+console.log(firstPart)
+console.log("text: " + text)
+
+let secondPart = text.slice(8)
+console.log(secondPart)
+
+let thirdPart = text.slice(-14, -9)
+console.log(thirdPart)
+
+// - - - - substring( start , end ) -
+
+let part = text.substring(8, 13)
+console.log(part)
+
+//substr(start, length )
+
+let subStrPart = text.substr(8, 5)
+console.log(subStrPart)
+
+let substrPart2 = text.substr(-14,5)
+console.log(substrPart2)
+
+// ----- --- S P L I T -------  //
+
+let splittedPart = text.split(" ")  // çift tırnak arası bir boşlık kelime olarak ayıtıyot. boşluksuz olursa harf harf ayırıyor.//
+console.log(splittedPart)
+
+let text2 = "England, Germany, Turkey, France, USA, "
+const splittedPart2 = text2.split(",")
+console.log(splittedPart2 )
+console.log(splittedPart2[1])  //hedef kelime seçmek için köşeli parntez ekliyoruz
+console.log(splittedPart2[4])
+console.log(splittedPart2[3])
+console.log(splittedPart2[2])
+
+// REPLACE//
+                             //replace method only replaces the firtst match value.
+let yazi = "Current euro currency is 15,22"
+let hece = yazi.split(" ")
+let sonoge = yazi.substr(-5)
+console.log(hece)
+console.log(sonoge)
+let currency = hece[hece.length -1]
+console.log(currency)
+
+currency = currency.replace(",",".")
+console.log(currency)
+currency = Number(currency)  // string den sayı değerine geçiş yaptırdık.//
+console.log(currency)
+
+let replaceStr = yazi.replace("euro","dolar")
+console.log(replaceStr)    // burada kelime değişikliği yaptık.
+
+let string2 = "Wellcome to DGHome"
+let newstring = string2.replace("DGHome", "Digihome")
+console.log(newstring)
+let newString2 = string2.replace(" ", "")
+console.log(newString2)
+let newString3 = string2.replaceAll(" ", "")  // reeplaceAll ile hepsine geçerli yaptık.
+console.log(newString3)
+
+//  TRIM  //        
+                    // başlardaki boşluklar alınmış oldu , trim kullanılarak
+
+let string3 = "          Welcome to DGHome          "
+console.log(string3)
+let trimmedExample = string3.trim()
+console.log(trimmedExample)
+
+// INCLUDE  //
+                //birşey içeriyor mu ona bakmak için includes kullanılır. true false cevap alınabilir.
+let string4 = "My favourite fruit is apple."
+let includeExample = string4.includes("apple")
+console.log(includeExample)
+let includeExample2= string4.includes("elma")
+console.log(includeExample2)
+
+// INDEXOF  //
+
+let string5 = "All is well !"
+let ind = string5.indexOf("l")
+let lastInd = string5.indexOf("l")
+console.log(ind)
+console.log(lastInd)
+
+let ind2 =string5.indexOf("l", ind + 5)
+console.log(ind2)
+
+//concat
+
+let s1 = "Hello "
+let s2 = "World"
+let s3 = s1.concat(s2)
+console.log(s3)
+
+//charAt
+
+let char = s3.charAt(6)  // 6. karakteri bulmak içib charAt kullanılır.//
+console.log(char)
+
+//  toLowerCase / toUpperCase 
+
+let example11 = "Merhaba Dünya"
+let toLowerCaseExample= example11.toLowerCase
+console.log(toLowerCaseExample)
+
+let example11 = "Merhaba DÜnya Merhaba"
+let toLowerCaseExample = example11.toLowerCase()
+console.log(toLowerCaseExample)
+let toUpperCaseExample = example11.toUpperCase()
+console.log(toUpperCaseExample)
+
+
+/////////////////////////////////////////////////////////////////////
+ //  STRING METHODS -----------------------------//
+////////////////////////////////////////////////////////////////////////
+ //------------- A R R A Y S ------------------------//
+
+const student1 = "muhlise"
+const student2 = "utku"
+const student3 = "kemal"
+
+const studentArray = ["muhlise", "utku", "kemal","cengiz", "erhan"]
+console.log(studentArray)
+
+console.log(studentArray[4])
+console.log(studentArray[0])
+console.log(studentArray[studentArray.length-1])
+
+studentArray[2] = ("nurcan" ) // değiştirme yaptık!!!
+console.log(studentArray)
+
+studentArray.push("fatih")
+console.log(studentArray)
+const newArray = studentArray.push("kartal")   // burada 
+console.log(studentArray)  
+console.log(newArray)  //burada sadece kaç elemanımız olduğunu gördük
+
+////////////////////////////////////////////////////////////////
+// unshift() -> adds element as a first value of array
+                       //  en başa eleman ekledik
+studentArray.unshift("Hasan")
+studentArray.unshift(3)
+console.log(studentArray)
+studentArray.unshift(['a'])
+studentArray.unshift(true)
+console.log(studentArray)
+
+////////////////////////////////////////////////////////////////////
+// REMOVE ELEMENT  //
+      //pop()-> removes last element
+
+studentArray.pop()     //  en son eleman atıldı  //
+console.log(studentArray)
+studentArray.pop()     //  tekrar en son eleman atıldı  //
+console.log(studentArray)
+studentArray.pop()     //  en son eleman atıldı yani //
+console.log(studentArray)
+
+const popped = studentArray.pop()
+console.log(popped) // en son atılan elemanı gördük
+console.log(studentArray)
+
+////////////////////////////////////////////////////////////////
+//  shift  -> ilk eleman atılacak shift ile
+
+studentArray.shift()
+console.log(studentArray)  // true elemanı atıldı
+
+const atilan = studentArray.shift()   //  burada hangi elemanın atıldığını gördük   =>  [a]  atıldı
+console.log(atilan)
+
+//////////////////////////////////////////////////////////
+//  indexOf   //
+console.log(studentArray.indexOf("kartal"))
+ //aranılan bulunamadığı zaman -1 cevabı gelir
+console.log(studentArray.indexOf("Hasan")) // 1 .index
+console.log(studentArray.indexOf("utku"))// 3. index te aranılan eleman
+
+///////////////////////////////////////////////////////////////////
+// includes  //
+
+console.log(studentArray.includes("nurcan"))   //  var
+// aranılan eleman var mı ? cevap => true ya da false
+console.log(studentArray.includes("Tercan"))  //  yok
+
+//////////////////////////////////////////////////////
+// splice   //
+
+ splice(start, deleteCount)
+splice(start, deleteCount, item1)
+
+
+console.log(studentArray)
+
+///const spliced= studentArray.splice(2,2)
+//console.log(spliced)  
+
+const spliced2 = studentArray.splice(0,2, "ebuzer", "cengiz", "erhan")
+// sıfırıncı elemandan sonra  iki eleman at ve  sonra ebuzer cengiz erhan ekle
+console.log(spliced2)
+console.log(studentArray)
+
+const spliced3 = studentArray.splice(2,0, "hasan", "cano")
+// 2. elemanlandan sonra 0 eleman at ve sonra ikinci indexe hasan ve cano ata
+console.log(spliced3)
+console.log(studentArray)
+//////////////////////////////////////////////////////////////
+// slice //
+// slice(start, end) // end does not includes
+// hedeflenen parçayı const ile atayıp alabiliriz. 
+
+const sliced = studentArray.slice(1,3)  // 1den 3e kadar elemnaları bana getir
+console.log(sliced)
+console.log(studentArray)
+
+///////////////////////////////////ARRAYS//////////////(finish)///////////
+
+///////////////////////////////  OBJECTS   //////////////(start)///////////
+
+const employeeArr = [
+    'John',
+    'Snow',
+    '28',
+    'trainer'
+]
+
+// key-value pairs
+
+const empObj = {
+    firstName  : 'John',
+    lastName   : 'Snow',
+    age        : '28',
+    job        : 'trainer'
+}
+console.log(empObj)
+
+// dot notation - bracket notation
+
+console.log(empObj.firstName)         //nokta ile getirdik
+console.log(empObj['firstName'])      // köşeli parantez ile getirdik.
+
+nameKey = "Name"
+//console.log(empObj['first' + nameKey])
+//console.log(empObj['last' + nameKey])
+
+//const val = prompt ('what do you want to know about John')
+
+//console.log(empObj.val)
+
+//console.log(empObj[val])
+//mpObj[val] ? console.log(empObj[val]) : console.log['Wrong Request']
+
+empObj.location = 'Germany'     //array a ek yaptık
+console.log(empObj)
+
+empObj['mail'] = "abc@mail.com"
+console.log(empObj)
+
+empObj['language'] = ['English', "Deutsch", "Spanish"]
+console.log(empObj)
+
+empObj['driverLisense'] = true
+console.log(empObj)
+
+const empObj2 = {
+    firstName: 'John',
+    lastName:  'Snow',
+    birthYear: '1990',
+    job:       'trainer',
+  
+
+    calcAge : function(birthYear){
+    return 2021 - birthYear 
+    }
+    
+                            //    this kullanımı  => oblect içindeki herşeyi getirir, ve seçim yapılır
+
+    calcAge : function(){
+        console.log(this)
+        return 2021 - this.birthYear
+    }
+  
+}
+
+console.log(empObj2.calcAge(1990))
+
+///////   fizzbzz  example  //////////////////
+
+const fbArray = [];
+let count = 1
+
+function fizzBuzz(){
+    if(count % 3 == 0 && count % 5 !=0){
+        fbArray.push('Fizz')
+    }else if(count % 5 == 0 && count % 3 != 0)
+        {fbArray.push('Buzz')
+    }else if(count % 3 == 0 && count % 5 == 0)
+        {fbArray.push('FizzBuzz')
+}else{ fbArray.push(count)}
+count++
+return fbArray}
+
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+console.log(fizzBuzz())
+
+
+//  //  //  //  //  //  //  //  //  //  //  //   Objects -finish //
+
+/////////////////////////////     LOOPS        /////////////////////////////////////
+
+console.log('push up 1')
+console.log('push up 2')
+console.log('push up 3')
+console.log('push up 4')
+console.log('push up 5')
+console.log('push up 6')
+console.log('push up 7')
+console.log('push up 8')
+console.log('push up 9')
+console.log('push up 10')
+
+
+for(let rep =1; rep<= 30; rep++){
+    console.log(`push up ${rep}`)
+}        // iki satırlık komtla otuza kadar farklı durum için yazdırdık
+
+const fbArray = []
+for(let i = 1; i<=100; i++){
+    if (i % 3 == 0 && i % 5 == 0){
+        fbArray.push('FizzBuzz')
+    }else if(i % 5 == 0){
+        fbArray.push(`Buzz`)
+    }else if(i % 3 == 0){
+        fbArray.push(`Fizz`)
+    }else {
+        fbArray.push(i)
+    }
+}
+
+console.log(fbArray)
+
+
+const fbArray = []
+function fizzBuzz(){
+    for(let i = 1; i<=100; i++){
+        if (i % 3 == 0 && i % 5 == 0){
+            fbArray.push('FizzBuzz')
+        }else if(i % 5 == 0){
+            fbArray.push(`Buzz`)
+        }else if(i % 3 == 0){
+            fbArray.push(`Fizz`)
+        }else {
+            fbArray.push(i)
+        }
+    }
+    return fbArray
+}
+console.log(fizzBuzz())
+
+
+const array = ['data1', 'data2', 'data3', 'data4', 'data5']
+for(let i = 0; i < array.length; i++){
+    console.log(array[i])
+}
+
+////// continue - break/////////
+
+let evenNumbers = []
+for(let i = 0; i <= 100; i++){
+    if(i % 2 == 0 ) continue      // continue şaartı sağlanırsa atla analamında. burada tek sayolar bize dönecek!
+    evenNumbers.push(i)
+} 
+console.log(evenNumbers)
+
+let oddNumbers = []
+for(let i = 0; i <= 100; i++){
+    if(i % 2 != 0 ) continue      // break şartı sağlanırsa onu alma ve bitir demek. artık devam etme! 80 i almadı ve ileri gitmedi
+    oddNumbers.push(i)
+} 
+console.log(oddNumbers)
+
+
+for(let i = 1; i <=3; i++){
+    console.log(`ANA BAŞLIK ${i} -------`)
+    for ( let j = 1; j <=4; j++)
+        console.log(`           İç Başlık ${j}-------------`)
+    for( let k = 1; k <=2; k++)
+        console.log(`                     En içerideki küçük başlık ${k} ------------`)
+}
+
+
+for(let i = 10; i>= 0; i--){
+    console.log(`merhaba size ${i} kere`)
+}
+
+const gerisayim = []
+for(let i = 10; i>= 0; i--){
+    gerisayim.push(`merhaba dünya`, i)
+}
+console.log(gerisayim)
+
+///////   WHILE   ///////////////////////////////////////////
+
+let rep = 1
+while(rep <= 10){
+    console.log(`push up ${rep}`)
+    rep++
+} 
+
+let dice = Math.trunc(Math.random() * 6) + 1
+console.log(dice)
+
+while(dice !==6){
+    console.log(`You rolled ${dice}`)
+    dice = Math.trunc(Math.random() * 6) +1
+    console.log(dice == 6 ? "You win" : "Try again")
+}
+
+let num = 11;
+let sum = 0;
+
+do {
+    sum +=num
+}while(num<=10)
+console.log("The total is: ", sum)
+
+////// armstrong sayısı örneği çözüm //////////////
+
+const number = prompt("Please enter a number: ")
+function isArmstrong(number){
+    let len = number.length
+    let arr = number.split('')
+    let sum = 0
+    console.log(arr)
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i] ** len
+    }
+    return sum == number ? `${number} is Armstrong ` : ` ${number} is not Armstrong`
+}
+console.log(isArmstrong(number))
+///////////////////////////////////////////////////
+
+const currentAge = 15
+
+if (currentAge>=18){
+    console.log("you can drive  a car legally")
+}else{
+    console.log("you can not drivea car")
+}
+
+const dogumyıl = 1995;
+let generation;
+    if(dogumyıl>=1990){
+     // console.log("y jenerasyonu")
+      generation = "y"
+    }else if(dogumyıl>=2000){
+     //console.log("z jenerasyonu")
+        generation = "z"
+    }
+    console.log("jenerasyon",  b generation)
+
+
+grade= 50;
+grade>=60 ? console.log("büyük") : console.log("küçük")
+
+hacim = "kırk"
+hacim == " elli" ? console.log("elli") : console.log("kırk")
+
+
+
+const day = prompt("enter a day")
+const hour = prompt("enter a hour")
+if ((day =="monday" && day =="tuesday" && day=="wednesday" && day =="thursday" && day == "friday" && day =="saturday") && (hour>=8 && hour<=20)){
+    console.log("bugün açığız")
+}
+else{
+    console.log("bugün kaplaı")
+}
+
+
+function average (a,b,c){
+    return (a+b+c)/3
+}
+
+const grup1ortalama = average(96, 108, 89)
+console.log(grup1ortalama)
+
+const grup2ortalama = average(88, 91, 110)
+console.log(grup2ortalama)
+
+
+function kazananibul(grup1ortalama, grup2ortalama){
+    if(grup1ortalama > grup2ortalama){
+        return `kazanan grup bir`
+}
+else{
+    return `kazanan grup 2`
+} }
+
+console.log(kazananibul(grup1ortalama, grup2ortalama))
+
+
+const year = prompt ("enter a year: ")
+
+function leapYear (year){
+    if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+        return `${year} is a leap year.`
+    }else{
+        return `${year}  is a not leap year.`
+    }
+}
+leapYear()
+console.log(leapYear(year))
+
+
+const number = prompt ("enter a number")
+function isArmstrong(number){
+const len = number.length
+console.log(len)
+const newNumber = number.split("")
+console.log(newNumber)
+const sum = newNumber[0]**len + newNumber[1]**len + newNumber[2]**len
+return  sum == number ? "is Armstrong" : "not a Armstrong number"
+}
+console.log(isArmstrong(number))
+
+
+//--------------STRING METHODS ------------------
+
+let text = "her şey güzel olacak !"
+let len = text.length
+console.log("length" + " " +len)
+
+let firstPart = text.slice(8,13)
+console.log(firstPart)
+console.log("text: " + text)
+
+let secondPart = text.slice(8)
+console.log(secondPart)
+
+let thirdPart = text.slice(-14, -9)
+console.log(thirdPart)
+
+let part = text.substring(8,13)
+console.log(part)
+
+let substrPart = text.substr(8,5)
+console.log(substrPart)
+
+let substrPart1 = text.substr(-14,5)
+console.log(substrPart1)
+
+// ----------- SPLIT ---------
+
+let text2 = "Turkey, Germany, USA, France"
+let splittedPart = text2.split(",")
+console.log(splittedPart)
+console.log("ikinci ülke hangisi: "+splittedPart[1])
+let splittedPart3 = text2.split("")
+console.log(splittedPart3)
+
+let text5 ="benim, dünyam - senin, dünyan"
+let hece = text5.split("n")
+console.log(hece)
+console.log(text5)
+//--------------REPLACE ---------------
+
+let text6 = "sen, ne, dedin ki 3,17"
+yerinekoy = text6.replace("-", "AAA")
+console.log(yerinekoy)
+let sen1 = text6.replaceAll(",",".")
+console.log(sen1 )
+
+let ind = text.indexOf("e" )
+console.log(ind)
+let ind2 = text.indexOf("e", ind+1)
+console.log(ind2)
+
+const studentArray = ["a","b","c","d","e","f"]
+console.log(studentArray)
+const newstudentArray = studentArray.push("x")
+console.log(newstudentArray)
+console.log(newstudentArray)
+console.log(studentArray)
+
+// ---------- DAT NOTATION  - BRACKET NOTATION
+
+console.log(empObj.firstname)
+console.log(empObj["firstname"])
+
+nameKey = "Name"
+
+const val = prompt('What do you want  to know about John')
+
+console.log(empObj.val)
+console.log(empObj[val])
+
+//empObj[val] ? console.log(empObj[val]) : console.log("WRONG REQUEST")
+
+const empObj = {
+    firstname : 'John',
+    lastName : 'Snow',
+    age : 28,
+    job : 'trainer',
+}
+empObj.location ="germany"
+
+empObj.mail = "fari@ofak.omr"
+console.log(empObj)
+
+empObj["language"] = ['English', 'Türkish', 'Deutsch','Spanish']
+console.log(empObj)
+
+empObj.driverlicense = true
+console.log(empObj)
+
+empObj['driverAge'] = false
+
+const empObj2 = {
+    firstName : 'John',
+    lastName : 'Snow',
+    birthYear : '1990',
+    job : 'trainer',
+
+    calcAge : function(){
+        return 2021  - this.birthYear
+    }
+}
+
+console.log(empObj2.calcAge())
+
+const fbArray = []
+for(i=1; i<=100; i++){
+    if(i % 15 == 0){
+        fbArray.push('FizzBuzz')
+    }else if(i%5 ==0){
+        fbArray.push('Buzz')
+    }else if(i % 3 ==0){
+        fbArray.push('Fizz')
+    }else{
+        fbArray.push(i)
+    }
+}
+console.log(fbArray)
+
+const array = ["eleman1", "eleman2", "eleman3", "eleman4", "eleman5"]
+for(let i = 0; i <array.length; i++)
+{console.log("şimdi elaman buraya yazılacak",  array[i])}
+
+for(let i = 1; i <=3; i++){
+    console.log(`spor hareketi 1 ${i}`)
+    for(let j=1; j<=5; j++){
+        console.log(`  -spor hareketi değişik ${j}`)
+        for(let k=10; k>0; k--){
+            console.log(`     ------${k}---bu da geriye sayım değeri `)
+        }
+    }
+}
+
+const arraya = []
+for(let deger = 10; deger>0; deger--){
+    arraya.push(deger)
+}
+console.log(arraya)
+
+//   WHILE        //
+
+let arti = 1
+while(arti<=10){
+    console.log(`push up ${arti}`)
+    arti++
+}
+
+
+let zar = Math.trunc(Math.random()*6)+1
+//console.log(zar)
+while(zar !==6){
+    console.log(`You rolled ${zar}`)
+    zar = Math.trunc(Math.random()*6)+1
+    console.log(zar==6 ? "You win": "Try again")
+}
+////////////////////////////////////////////////////////////
+
+// ARMSTRONG SAYISI BULMA
+
+const number = prompt("Please enter a Number")
+function isArmstrong(number){
+    let len = number.length
+    let arr = number.split("")
+    let sum = 0
+    console.log(arr)
+    for(let i =0; i < number.length; i++){
+        sum+=arr[i] ** len
+    }
+    return sum==number ? `${number} is a Armstrong number` : `${number} is a not Armstrong number` 
+    
+}
+console.log(isArmstrong(number))
+
+////////////////////////////////////////////////////////
+
+
+function addIndex(array){
+let arraytwo = []
+for(let i =0; i<array.length; i++){
+    arraytwo.push(array[i]+i)
+}
+return arraytwo;
+}
+
+let deneme = [-25, -14, 5, 12]
+let as = addIndex(deneme)
+console.log(as)
+
+function isTrueOrFalse(number1, number2){
+    return(number1==10 || number2 == 10 || number1+number2 ==10)
+}
+console.log(isTrueOrFalse(11,8))
+
+function onubulma(number1, number2){
+    if(number1==10 || number2==10 || number1 + number2 ==10 ){
+        return true
+    }else{return false}
+
+}
+
+console.log(onubulma(2,8))
+
+
+function isPalindrome(str){
+    var eliminateReg = /[\W_]/g;
+    let lowerCaseStr = str.toLowerCase().replace(eliminateReg , '')
+    let reversedStr = lowerCaseStr.split('').reverse().join('')
+    return(lowerCaseStr ===reversedStr)
+
+    var reg = /[^A-Za-z0-9]/g
+}
+
+console.log(isPalindrome('ey edip adanada pide ye'))
+console.log(isPalindrome('A man, a plan, a canal. Panama'))
+*/
+
+let number = prompt("Please enter a number")
+number = Number(number)
+if(number<0 || Number.isInteger(number) == false || isNaN(number)) alert("Please enter a positive integer")
+
+
+function isPrimeNumber(num){
+    if(num==1){
+        return `${num} is a not prime number`
+    }else if(num==2){
+        return `${num} is a prime number`
+    }else{
+        for(let i= 2; i<num; i++){
+            if(num%i==0){
+                return `${num} is a not Prime Numberr`
+            }
+            return `${num} is a PRIME NUMBER`
+        }
+    }
+}
+
+console.log(isPrimeNumber(number))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script> 
+
+
+</body>
+</html> 

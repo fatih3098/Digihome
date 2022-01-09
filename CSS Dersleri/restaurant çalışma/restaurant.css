@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comforter', cursive;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+ul {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 1.5em;
+    list-style-type: none;
+    background-color:maroon ;
+    border-radius: 20px;
+    padding: 10px ;
+    position:absolute;
+    width: 98%
+    
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    
+   
+}
+
+
+a{
+    margin: 40px;
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    border-radius: 50px;
+}
+a:hover {
+    background-color: white;
+    color: maroon;
+    transition: 0.5s ;
+}
+
+.firstplan {
+    height: 60vh;
+   
+    text-align:center;
+    display: flex;
+    justify-content: center; 
+    background-image: url(images/first.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 0 3px black, 0 0 0 6px white;
+}
+
+.myrestaurant {
+    margin: auto;
+    font-size: 5rem;
+    letter-spacing: .2em;
+    color:white;
+    -webkit-text-stroke:1px maroon
+}
+
+/* .myrestaurant:hover {
+    background-image:url(images/pexels-rodnae-productions-6529717.jpg) ;
+    transition: 1s;
+} */
+
+img {
+    height: 100%;    
+}
+
+h3 {
+    padding: 20px;
+}
+
+.orta1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+   
+}
+.alan1{
+    width: 20%;
+    
+    flex-shrink:1 ;
+}
+.alan2{
+    width: 35%;
+}
+.alan3{
+    width: 25%;
+    justify-content: space-between;
+}
+.alan4{
+    width: 20%; 
+}
+
+div.orta2 {
+    background-image: url(images/second.jpg);
+    background-attachment: fixed;
+    background-size: cover ;
+   
+    display: flex;
+    justify-content:center;
+    
+}
+
+p.orta2 {
+    font-size: 22px;
+}
+
+.box1 {
+    width: 20%;
+    height: 50vh;
+    border-radius: 20px;
+    text-align:center;
+    margin:20px;
+    background-color: white;
+}
+
+div.orta2 h2 {
+    margin-top: 10px;
+    color: maroon;
+}
+div.orta2 h2:hover {
+    background-color: maroon;
+    color: white;
+}
+.small {
+    width: 100%;
+    height: 25%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;  
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+}
+p.ikon {
+    font-size: 4em;
+    letter-spacing: .2em;
+}
+
+p.ikon:hover { font-size: 6em;
+    background-color: maroon;
+    color: white;
+    transition: .6s;
+
+}
+#ikon1 {
+    margin-left: 30px;
+    color:maroon;
+    font-size: 3em;
+}
+
+#ikon2 { margin-right: 30px;
+    
+    color:maroon;
+    font-size: 3em;
+    text-align: right;
+}
+
+.orta3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.orta4 {
+    display: flex;
+    justify-content: space-between
+}
+
+.img4 {
+    width: 25%;
+    height: 50vh  
+}
+
+.ikon3 {
+    font-size: 3em;
+    margin-left: 48%;
+    margin-top: 20px;
+    color:maroon
+}
+h2.finish {
+    text-align: center;
+    padding: 15px;
+}
+
+
